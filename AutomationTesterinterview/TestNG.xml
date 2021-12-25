@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BookingHotels">
+	<!-- listener is used to modifies the default TestNG's behavior.  It allows customizing TestNG reports or logs. -->
+	<listeners>
+		<listener class-name="com.automation.utilities.Reporting" />
+	</listeners>
+
+	<!--  All or specific test can executed -->
+	<test name="Booking Hotel Test">
+		<!-- chrome is passed as parameter -->
+		<parameter name="browser" value="chrome" />
+		<classes>
+	<class name="com.AutomationTesterinterview.testCases.TC_01_BookingHotelsTest" />
+		</classes>
+	</test>
+
+</suite>
